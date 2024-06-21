@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Details</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="base-layer">
+            <h1 class="title">Vis-Aid</h1>
+        </div>
+        <div class="second-layer">
+            <h3 class="subtitle">Enter the Details Below</h3>
+            <form action= "{{ url_for('vd_cgallery') }}" method="post">
+                <section>
+                    <div>
+                        <label for="spherical"></label><input type="number" name="spherical"
+                            placeholder="Spherical Power" />
+                    </div>
+                    <div>
+                        <label for="cylindrical"></label><input type="number" name="cylindrical"
+                            placeholder="Cylindrical Power" />
+                    </div>
+                    <div>
+                        <label for="axis"></label><input type="number" name="axis" placeholder="Axis" />
+                    </div>
+                    <div>
+                        <button class="next">View Transformed Images   </button>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

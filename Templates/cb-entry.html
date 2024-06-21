@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Details</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="container-1">
+      <div class="base-layer">
+        <h1 class="title">Vis-Aid</h1>
+      </div>
+      <div class="second-layer">
+        <h3 class="subtitle">Select the Type to Experience</h3>
+        <form action="{{ url_for('ecb_cgallery') }}" method="post">
+          <section>
+            <div>
+              <input type="radio" id="option-0" name="options" style="display: none" />
+
+              <input type="radio" id="option-1" name="options" checked />
+              <label for="option-1">Deuteranomaly</label>
+
+              <input type="radio" id="option-2" name="options" />
+              <label for="option-2">Protanomaly</label>
+
+              <input type="radio" id="option-3" name="options" />
+              <label for="option-3">Protanopia</label>
+            </div>
+            <div>
+              <input type="radio" id="option-4" name="options" checked />
+              <label for="option-4">Deuteranopia</label>
+
+              <input type="radio" id="option-5" name="options" />
+              <label for="option-5">Tritanomaly</label>
+
+              <input type="radio" id="option-6" name="options" />
+              <label for="option-6">Tritanopia</label>
+            </div>
+
+            <div>
+              <input type="radio" id="option-7" name="options" checked />
+              <label for="option-4">Monochromacy</label>
+            </div>
+            <div>
+              <button class="next">View Transformed Images</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

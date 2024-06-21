@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Visual Difficulty</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+  <body>
+    <div class="container-1">
+      <div class="base-layer">
+        <h1 class="title">Vis-Aid</h1>
+      </div>
+      <div class="second-layer">
+        <h3 class="subtitle">Choose an option to go ahead</h3>
+        <div class="container-2">
+          <div class="section">
+            <p class="options">View Custom Tailored Images</p>
+            <a href="{{ url_for('evdentry') }}">
+                <div class="images">
+                    <img src="{{ url_for('static', filename='/Assets/images/custom-details.jpeg') }}" />
+                  </div>
+            </a>
+          </div>
+          <div class="section">
+            <a href="{{ url_for('evd_rgallery') }}">
+                <div class="images">
+                    <img src="{{ url_for('static', filename='/Assets/images/random-images.jpg') }}" />
+                  </div>
+            </a>
+            <p class="options">View Random Images</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

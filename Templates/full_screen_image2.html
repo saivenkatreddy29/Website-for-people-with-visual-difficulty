@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Image</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-container {
+            flex: 1;
+            padding: 20px;
+            font-size: 20px;
+            overflow: auto;
+            justify-content:center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .text {
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div style="width: 45%;">
+            <h2>Original Image</h2>
+            <img src="/{{ original_image }}" alt="Original Image">
+        </div>
+        <div style="width: 45%;">
+            <h2>Annotated Image</h2>
+            <img src="data:image/jpeg;base64,{{ annotated_image }}" alt="Annotated Image">
+        </div>
+    </div>
+</body>
+</html>

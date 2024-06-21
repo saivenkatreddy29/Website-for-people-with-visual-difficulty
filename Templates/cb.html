@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Blindness</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="base-layer">
+        <h1 class="title">Vis-Aid</h1>
+      </div>
+      <div class="second-layer">
+        <h3 class="subtitle">Choose an option to go ahead</h3>
+        <div class="container-2">
+          <div class="section">
+            <p class="options">Experience Color Blindness</p>
+            <a href="{{ url_for('cbentry') }}">
+                <div class="images">
+                    <img src="{{ url_for('static', filename='Assets/images/exp-cb.jpg') }}" />
+                  </div>
+            </a>
+          </div>
+          <div class="section">
+            <a href="{{ url_for('cbai') }}">
+              <div class="images">
+                <img src="{{ url_for('static', filename='Assets/images/color-ann.png') }}" />
+              </div>
+            </a>
+            <p class="options">Color Annotated Images</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisAid: Visual Aid</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+  <body>
+    <div class="container-1">
+      <div class="base-layer">
+        <h1 class="title">Vis-Aid</h1>
+      </div>
+      <div class="second-layer">
+        <h3 class="subtitle">Choose an option to go ahead</h3>
+        <div class="container-2">
+          <div class="section">
+            <p class="options">Visual Difficulty ??</p>
+            <a href="{{ url_for('vd') }}">
+                <div class="images">
+                    <img src="{{ url_for('static', filename='/Assets/images/check-sight.jpeg') }}" />
+                  </div>
+            </a>
+          </div>
+          <div class="section">
+            <a href="{{ url_for('cb') }}">
+                <div class="images">
+                    <img src="{{ url_for('static', filename='/Assets/images/color_blind.jpeg') }}" />
+                  </div>
+            </a>
+            <p class="options">Color Blindness ??</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

@@ -103,7 +103,7 @@ information.
 The paper does not address potential ethical considerations or privacy
 concerns related to conducting eye-tracking studies
 
-<img src="./hixg01ab.png" style="width:2in;height:1.328in" />
+<img src="Report_images/hixg01ab.png" style="width:2in;height:1.328in" />
 
 or observational research on website users,There is a lack of discussion
 on the generalizability of the findings to broader populations beyond

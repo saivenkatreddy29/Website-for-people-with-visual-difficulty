@@ -160,7 +160,7 @@ axis aligned at 178 degrees.
 
 > IV\. EYE SIGHT CORRECTION
 
-<img src="./czosfz3p.png"
+<img src="Report_images/czosfz3p.png"
 style="width:1.99973in;height:1.00827in" />Visually correcting eye
 defects such as myopia and hy-permetropia within images using the OpenCV
 library and NumPy for image processing was explored and using
@@ -182,7 +182,7 @@ then adjusted for the distortion caused by the visually defective
 eyesight. After adjusting the corrected coordinates, they are mapped
 using the cv2. remap function from OpenCV to get the corrected image.
 
-> <img src="./emir4pfs.png" style="width:2in;height:1.328in" />Fig.
+> <img src="Report_images/emir4pfs.png" style="width:2in;height:1.328in" />Fig.
 > 3. Original Image
 >
 > This mapping function maps the pixels of the original image to the
@@ -194,7 +194,7 @@ using the cv2. remap function from OpenCV to get the corrected image.
 > Fig. 1. Original Image multiplied with a weight factor to control the
 > strength of
 
-<img src="./zvjipom2.png" style="width:2in;height:1.328in" />
+<img src="Report_images/zvjipom2.png" style="width:2in;height:1.328in" />
 
 the edge enhancement. Then the weighted edges are con-verted to a
 3-channel image using cv2.bitwise_and to retain the original colours of
@@ -217,13 +217,13 @@ blindness is simulated by altering the distribu-tion of colour
 information in the image to be closer to the perceptual effects of
 people with that particular kind of colour vision deficiency.
 
-> <img src="./ohdbluop.png"
+> <img src="Report_images/ohdbluop.png"
 > style="width:1.99973in;height:1.00827in" />Fig. 4. Original Image
 >
-> <img src="./ofagan3z.png" style="width:2in;height:1.328in" />Fig.
+> <img src="Report_images/ofagan3z.png" style="width:2in;height:1.328in" />Fig.
 > 6. colour blindness interface
 >
-> <img src="./eleiyyjs.png" style="width:2in;height:1.328in" />Fig.
+> <img src="Report_images/eleiyyjs.png" style="width:2in;height:1.328in" />Fig.
 > 5. Vision Corrected Image
 
 Figure 3 is taken from the Flickr image dataset. Figure 4 shows the
@@ -235,7 +235,7 @@ level where viewing is comdortable.
 
 > V. SIMULATING COLOUR BLINDNESS
 
-<img src="./z5y11a3v.png" style="width:2in;height:1.328in" />Fig.
+<img src="Report_images/z5y11a3v.png" style="width:2in;height:1.328in" />Fig.
 7. Original Image
 
 PIL and NumPy for image processing is used to simulate several types of
@@ -265,7 +265,7 @@ a color detection model is made. The model aims to detect the top 5
 dominant colours and then overlay the names of those colours on top of
 the colour regions.
 
-<img src="./axkuh0vc.png" style="width:2in;height:1.328in" /><img src="./oxud2vg4.png" style="width:2in;height:1.328in" />
+<img src="Report_images/axkuh0vc.png" style="width:2in;height:1.328in" /><img src="./oxud2vg4.png" style="width:2in;height:1.328in" />
 
 The get_dominant_colors function is the core func-tion of the colour
 detection part. This function takes a single image and the number of
@@ -309,7 +309,7 @@ strong API that will update the website in real time from the models.
 From the Flask API, it is possible to address the models, send user
 input, and receive generated output.
 
-<img src="./kjua5g2h.png"
+<img src="Report_images/kjua5g2h.png"
 style="width:2.99985in;height:1.94831in" />When a user interacts with
 the website by inputting custom values, the Flask API will perform the
 request and transfer the relevant data to the models for processing.
@@ -323,7 +323,7 @@ appealing interfaces.
 >
 > Fig. 11. Opening Page
 >
-> <img src="./oxpktued.png"
+> <img src="Report_images/oxpktued.png"
 > style="width:2.99985in;height:1.94831in" />Fig. 10. Displayed with
 > colors
 
@@ -339,7 +339,7 @@ image and can help in aiding people with colour blindness.
 All the above figures describe our website, which we designed to display
 the results. The final website will be ready
 
-<img src="./uerbcjgs.png"
+<img src="Report_images/uerbcjgs.png"
 style="width:2.99985in;height:1.94831in" />
 
 > Fig. 13. Metrics Entry Page
